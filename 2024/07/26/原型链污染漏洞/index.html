@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="JavaScript 原型链污染漏洞JavaScript 原型链 原型链是javascript的实现的形式,递归继承原型对象的原型,原型链的顶端是Object的原型。  在 JavaScript 中，没有引入类这个概念，不是一门完全面对对象编程的语言。那么对于对象编程来说要考虑对象的继承。   而 Javascript 的原型链是其继承机制的基础， 是一个对象通过其原型属性链接到另一个对象的过程。">
+  <meta name="description" content="JavaScript 原型链 原型链是javascript的实现的形式,递归继承原型对象的原型,原型链的顶端是Object的原型。  在 JavaScript 中，没有引入类这个概念，不是一门完全面对对象编程的语言。那么对于对象编程来说要考虑对象的继承。   而 Javascript 的原型链是其继承机制的基础， 是一个对象通过其原型属性链接到另一个对象的过程。这一机制允许对象共享属性和方法，并且">
 <meta property="og:type" content="article">
-<meta property="og:title" content="原型链污染漏洞">
+<meta property="og:title" content="JavaScript 原型链污染漏洞">
 <meta property="og:url" content="http://example.com/2024/07/26/%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%B1%A1%E6%9F%93%E6%BC%8F%E6%B4%9E/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="JavaScript 原型链污染漏洞JavaScript 原型链 原型链是javascript的实现的形式,递归继承原型对象的原型,原型链的顶端是Object的原型。  在 JavaScript 中，没有引入类这个概念，不是一门完全面对对象编程的语言。那么对于对象编程来说要考虑对象的继承。   而 Javascript 的原型链是其继承机制的基础， 是一个对象通过其原型属性链接到另一个对象的过程。">
+<meta property="og:description" content="JavaScript 原型链 原型链是javascript的实现的形式,递归继承原型对象的原型,原型链的顶端是Object的原型。  在 JavaScript 中，没有引入类这个概念，不是一门完全面对对象编程的语言。那么对于对象编程来说要考虑对象的继承。   而 Javascript 的原型链是其继承机制的基础， 是一个对象通过其原型属性链接到另一个对象的过程。这一机制允许对象共享属性和方法，并且">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-07-25T16:37:55.000Z">
-<meta property="article:modified_time" content="2024-07-25T16:40:16.680Z">
+<meta property="article:modified_time" content="2024-07-25T16:41:15.550Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>原型链污染漏洞 | Hexo</title>
+  <title>JavaScript 原型链污染漏洞 | Hexo</title>
   
 
 
@@ -163,7 +163,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          原型链污染漏洞
+          JavaScript 原型链污染漏洞
         </h1>
 
         <div class="post-meta">
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2024-07-26 00:37:55 / Modified: 00:40:16" itemprop="dateCreated datePublished" datetime="2024-07-26T00:37:55+08:00">2024-07-26</time>
+              <time title="Created: 2024-07-26 00:37:55 / Modified: 00:41:15" itemprop="dateCreated datePublished" datetime="2024-07-26T00:37:55+08:00">2024-07-26</time>
             </span>
 
           
@@ -188,7 +188,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="JavaScript-原型链污染漏洞"><a href="#JavaScript-原型链污染漏洞" class="headerlink" title="JavaScript 原型链污染漏洞"></a>JavaScript 原型链污染漏洞</h1><h2 id="JavaScript-原型链"><a href="#JavaScript-原型链" class="headerlink" title="JavaScript 原型链"></a>JavaScript 原型链</h2><blockquote>
+        <h2 id="JavaScript-原型链"><a href="#JavaScript-原型链" class="headerlink" title="JavaScript 原型链"></a>JavaScript 原型链</h2><blockquote>
 <p>原型链是javascript的实现的形式,递归继承原型对象的原型,原型链的顶端是Object的原型。</p>
 </blockquote>
 <p>在 JavaScript 中，没有引入类这个概念，不是一门完全面对对象编程的语言。那么对于对象编程来说要考虑对象的继承。  </p>
@@ -313,7 +313,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript-%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%B1%A1%E6%9F%93%E6%BC%8F%E6%B4%9E"><span class="nav-number">1.</span> <span class="nav-text">JavaScript 原型链污染漏洞</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript-%E5%8E%9F%E5%9E%8B%E9%93%BE"><span class="nav-number">1.1.</span> <span class="nav-text">JavaScript 原型链</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.1.</span> <span class="nav-text">基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%8E%9F%E5%9E%8B"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">对象和原型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">原型链的工作机制</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%9A%84%E4%BD%9C%E7%94%A8%E5%92%8C%E6%84%8F%E4%B9%89"><span class="nav-number">1.1.2.</span> <span class="nav-text">原型链的作用和意义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%B1%A1%E6%9F%93%E6%BC%8F%E6%B4%9E%E5%8E%9F%E7%90%86"><span class="nav-number">1.2.</span> <span class="nav-text">原型链污染漏洞原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BE%8B%E5%A6%82%EF%BC%9A"><span class="nav-number">1.2.1.</span> <span class="nav-text">例如：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%B1%A1%E6%9F%93%E7%9A%84%E9%A3%8E%E9%99%A9"><span class="nav-number">1.3.</span> <span class="nav-text">原型链污染的风险</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A9%E7%94%A8%E6%89%8B%E6%AE%B5"><span class="nav-number">1.3.1.</span> <span class="nav-text">利用手段</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.4.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript-%E5%8E%9F%E5%9E%8B%E9%93%BE"><span class="nav-number">1.</span> <span class="nav-text">JavaScript 原型链</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%8E%9F%E5%9E%8B"><span class="nav-number">1.1.1.</span> <span class="nav-text">对象和原型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%9C%BA%E5%88%B6"><span class="nav-number">1.1.2.</span> <span class="nav-text">原型链的工作机制</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%9A%84%E4%BD%9C%E7%94%A8%E5%92%8C%E6%84%8F%E4%B9%89"><span class="nav-number">1.2.</span> <span class="nav-text">原型链的作用和意义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%B1%A1%E6%9F%93%E6%BC%8F%E6%B4%9E%E5%8E%9F%E7%90%86"><span class="nav-number">2.</span> <span class="nav-text">原型链污染漏洞原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BE%8B%E5%A6%82%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">例如：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%B1%A1%E6%9F%93%E7%9A%84%E9%A3%8E%E9%99%A9"><span class="nav-number">3.</span> <span class="nav-text">原型链污染的风险</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A9%E7%94%A8%E6%89%8B%E6%AE%B5"><span class="nav-number">3.1.</span> <span class="nav-text">利用手段</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
