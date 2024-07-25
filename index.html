@@ -170,7 +170,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2024-07-26 00:37:55 / Modified: 00:38:28" itemprop="dateCreated datePublished" datetime="2024-07-26T00:37:55+08:00">2024-07-26</time>
+              <time title="Created: 2024-07-26 00:37:55 / Modified: 00:40:16" itemprop="dateCreated datePublished" datetime="2024-07-26T00:37:55+08:00">2024-07-26</time>
             </span>
 
           
@@ -201,7 +201,7 @@
 <p>例如：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">    <span class="attr">a</span>: <span class="number">1</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> obj2 = <span class="title class_">Object</span>.<span class="title function_">create</span>(obj);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj2.<span class="property">a</span>); <span class="comment">// 输出: 1</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj2.<span class="title function_">hasOwnProperty</span>(<span class="string">&#x27;a&#x27;</span>)); <span class="comment">// 输出: false</span></span><br></pre></td></tr></table></figure>
 <p>在这个例子中，obj2 的原型是 obj，当访问 obj2.a 时，JavaScript 引擎会在 obj2 本身查找属性 a，未找到后继续在 obj 中查找，并找到了属性 a 的值 1。</p>
-<h4 id="原型链的作用和意义"><a href="#原型链的作用和意义" class="headerlink" title="原型链的作用和意义"></a>原型链的作用和意义</h4><ol>
+<h3 id="原型链的作用和意义"><a href="#原型链的作用和意义" class="headerlink" title="原型链的作用和意义"></a>原型链的作用和意义</h3><ol>
 <li><strong>共享方法和属性</strong>：原型链允许对象共享方法和属性，从而节省内存和提高代码复用率。</li>
 <li><strong>动态继承</strong>：对象可以在运行时动态地改变其原型，从而实现动态继承和方法重写。</li>
 <li><strong>实现类继承</strong>：虽然 JavaScript 是一种基于原型的语言，但它可以模拟传统面向对象语言中的类继承。</li>
